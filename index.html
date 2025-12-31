@@ -40,20 +40,59 @@
       <li>Компаниям друзей.</li>
       <li>Семьям с детьми старше 12 лет</li>
     </ul>
+    <h2>Какие есть тарифы?</h2>
+    <p>
+      Мы знаем, что каждое путешествие уникально. Поэтому разработали несколько
+      тарифов, чтобы вы могли выбрать самый комфортный для себя. Независимо от
+      выбранного тарифа, вас ждет незабываемое путешествие. 3
+    </p>
     <table width="auto">
       <tr>
         <th width="300">Тариф</th>
         <th width="300">Группа</th>
+        <th width="300">Стоимость</th>
+        <th width="300">Программа</th>
       </tr>
       <tr>
         <td width="300">Эконом</td>
         <td width="300">От 15 человек</td>
+        <td width="300">1 500 рублей</td>
+        <td width="300">Пешая прогулка, Погрулка по крышам</td>
       </tr>
       <tr>
         <td width="300">Комфорт</td>
         <td width="300">От 7 человек</td>
+        <td width="300">2 500 рублей</td>
+        <td width="300">
+          Пешая прогулка, Экскурсия по рекам и каналам, Погрулка по крышам
+        </td>
+      </tr>
+      <tr>
+        <td width="300">Премиум</td>
+        <td width="300">От 4 до 6 человек</td>
+        <td width="300">4 200 рублей</td>
+        <td width="300">
+          Пешая прогулка, Экскурсия по рекам и каналам, Погрулка по крышам,
+          Экскурсия в Петергоф
+        </td>
+      </tr>
+      <tr>
+        <td width="300">Люкс</td>
+        <td width="300">1 - 2 человека</td>
+        <td width="300">6 000 рублей</td>
+        <td width="300">
+          Эксклюзивные маршруты под ключ, Пешая прогулка, Экскурсия по рекам и
+          каналам, Погрулка по крышам, Экскурсия в Петергоф
+        </td>
       </tr>
     </table>
+    <form>
+      <input type="checkbox" name="services" value="transfer" />
+      <label>Трансфер до места проведения</label>
+      <br />
+      <input type="checkbox" name="services" value="disabled_transfer" />
+      <label>Трансфер для амломибльных групп населения</label>
+    </form>
     <h3>Отзывы клиентов</h3>
     <figure>
       <img
@@ -99,6 +138,50 @@
       маршрут. <br />
       Не первый раз в Питере, но эти локации увидела впервые. Класс!
     </blockquote>
+    <form>
+      <label for="tariff">Выберите тариф:</label>
+      <select id="tariff" name="tariff" placeholder="выберите из списка">
+        <option value="one">Эконом</option>
+        <option value="two">Комфорт</option>
+        <option value="three">Премиум</option>
+        <option value="four">Люкс</option></select
+      ><br />
+      <label for="name">Имя:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Укажите ваше имя"
+      /><br />
+      <label for="email">Email:</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Введите email"
+      /><br />
+      <label for="age">Возраст:</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="Укажите возраст"
+      /><br />
+      <label for="gender">Пол:</label>
+      <input type="radio" id="male" name="male" placeholder="Мужской" />
+      <label for="male">Мужской</label>
+      <input type="radio" id="female" name="female" placeholder="Женский" />
+      <label for="female">Женский</label>
+      <br />
+      <input
+        type="checkbox"
+        id="confirm"
+        name="confirm"
+        placeholder="Подписаться"
+      />
+      <label for="confirm">Подписаться</label><br />
+      <button type="submit">Отправить</button>
+    </form>
     <a href="#" rel="noopener noreferrer">Свяжитесь с автором экскурсии</a>
   </body>
 </html>
