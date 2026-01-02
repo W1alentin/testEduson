@@ -6,6 +6,17 @@
   </head>
   <body>
     <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#programm">Программа</a></li>
+          <li><a href="#audience">Для кого</a></li>
+          <li><a href="#prices">Цены</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header id="home">
       <h1 align="center">Авторская экскурсия по Санкт-Петербургу</h1>
       <img
         src="./src/1.png"
@@ -21,50 +32,52 @@
       </p>
     </header>
     <main>
-      <h2>Что мы предлагаем?</h2>
-      <img
-        src="./src/10.png"
-        alt="Group of people in Saint Petersburg"
-        width="895"
-        height="502"
-      />
-      <p>
-        Приглашаем погрузиться в историю, культуру и великолепие
-        Санкт-Петербурга.
-      </p>
-      <p><b>На наших экскурсиях вас ждут:</b></p>
-      <ol>
-        <li>Профессиональный гид.</li>
-        <li>Уникальные маршруты.</li>
-        <li>Комфортный трансфер.</li>
-        <li>Прогулка по каналам.</li>
-        <li>Лучшие фотолокации.</li>
-        <li>Прогулки по крышам.</li>
-      </ol>
-
-      <h2>Кому подойдет экскурсия?</h2>
-      <img
-        src="./src/18.png"
-        alt="Girl in Saint Petersburg"
-        width="895"
-        height="502"
-      />
-      <ol>
-        <ul>
-          Организованным группам от 15 человек.
-        </ul>
-        <ul>
-          Индивидуальным путешественикам.
-        </ul>
-        <ul>
-          Компаниям друзей.
-        </ul>
-        <ul>
-          Семьям с детьми старше 12 лет.
-        </ul>
-      </ol>
-
-      <div class="container-tarif" id="prices">
+      <section id="programm">
+        <h2>Что мы предлагаем?</h2>
+        <img
+          src="./src/10.png"
+          alt="Group of people in Saint Petersburg"
+          width="895"
+          height="502"
+        />
+        <p>
+          Приглашаем погрузиться в историю, культуру и великолепие
+          Санкт-Петербурга.
+        </p>
+        <p><b>На наших экскурсиях вас ждут:</b></p>
+        <ol>
+          <li>Профессиональный гид.</li>
+          <li>Уникальные маршруты.</li>
+          <li>Комфортный трансфер.</li>
+          <li>Прогулка по каналам.</li>
+          <li>Лучшие фотолокации.</li>
+          <li>Прогулки по крышам.</li>
+        </ol>
+      </section>
+      <section id="audience">
+        <h2>Кому подойдет экскурсия?</h2>
+        <img
+          src="./src/18.png"
+          alt="Girl in Saint Petersburg"
+          width="895"
+          height="502"
+        />
+        <ol>
+          <ul>
+            Организованным группам от 15 человек.
+          </ul>
+          <ul>
+            Индивидуальным путешественикам.
+          </ul>
+          <ul>
+            Компаниям друзей.
+          </ul>
+          <ul>
+            Семьям с детьми старше 12 лет.
+          </ul>
+        </ol>
+      </section>
+      <section class="container-tarif" id="prices">
         <h2 class="sub-heading">Какие есть тарифы?</h2>
         <p class="text-tarif">
           Мы знаем, что каждое путешествие уникально. Поэтому разработали
@@ -117,9 +130,9 @@
           Мы предлагаем различные варианты оплаты. Менеджер поможет подобрать
           оптимальный вариант.
         </p>
-      </div>
+      </section>
 
-      <div class="dop">
+      <section class="dop">
         <h2>Дополнительные услуги</h2>
         <form class="dop-form">
           <ul>
@@ -216,60 +229,63 @@
             });
           });
         </script>
-      </div>
+      </section>
+      <section>
+        <h2>Отзывы участников</h2>
+        <figure>
+          <img
+            src="./src/5.png"
+            alt="People who visited Saint Petersburg and they are happy about it"
+            width="526"
+            height="295"
+          />
+          <figcaption>Аня и Сережа, Пермь</figcaption>
+        </figure>
+        <blockquote>
+          Спасибо за незабываемую экскурсию! Увозим с собой нереальные
+          фотографии! Организаторам огромное спасибо, что даже в дождь
+          путешествие было комфортным.
+        </blockquote>
 
-      <h2>Отзывы участников</h2>
-      <figure>
-        <img
-          src="./src/5.png"
-          alt="People who visited Saint Petersburg and they are happy about it"
-          width="526"
-          height="295"
-        />
-        <figcaption>Аня и Сережа, Пермь</figcaption>
-      </figure>
-      <blockquote>
-        Спасибо за незабываемую экскурсию! Увозим с собой нереальные фотографии!
-        Организаторам огромное спасибо, что даже в дождь путешествие было
-        комфортным.
-      </blockquote>
+        <figure>
+          <img
+            src="./src/17.png"
+            alt="Friends were glad to visit Saint Petersburg"
+            width="295"
+            height="526"
+          />
+          <figcaption>Света, Алена, Саша и Ваня, Краснодар</figcaption>
+        </figure>
+        <blockquote>
+          Мы провели замечательный день с вашей экскурсией по крышам
+          Санкт-Петербурга! Это было настоящее приключение. Рекомендуем!
+        </blockquote>
 
-      <figure>
-        <img
-          src="./src/17.png"
-          alt="Friends were glad to visit Saint Petersburg"
-          width="295"
-          height="526"
-        />
-        <figcaption>Света, Алена, Саша и Ваня, Краснодар</figcaption>
-      </figure>
-      <blockquote>
-        Мы провели замечательный день с вашей экскурсией по крышам
-        Санкт-Петербурга! Это было настоящее приключение. Рекомендуем!
-      </blockquote>
+        <figure>
+          <img
+            src="./src/21.png"
+            alt="Girl vicited Saint Petersburg and loved it"
+            width="526"
+            height="295"
+          />
+          <figcaption>Кристина, Архангельск</figcaption>
+        </figure>
+        <blockquote>
+          Мы просто влюбились в Санкт-Петербург благодаря этой экскурсии!
+          Суперский гид рассказал нам удивительные истории о городе и его
+          жителях. Отдельно отмечу маршрут. Не первый раз в Питере, но эти
+          локации увидела впервые. Класс!
+        </blockquote>
+      </section>
 
-      <figure>
-        <img
-          src="./src/21.png"
-          alt="Girl vicited Saint Petersburg and loved it"
-          width="526"
-          height="295"
-        />
-        <figcaption>Кристина, Архангельск</figcaption>
-      </figure>
-      <blockquote>
-        Мы просто влюбились в Санкт-Петербург благодаря этой экскурсии!
-        Суперский гид рассказал нам удивительные истории о городе и его жителях.
-        Отдельно отмечу маршрут. Не первый раз в Питере, но эти локации увидела
-        впервые. Класс!
-      </blockquote>
-
-      <div class="column">
+      <section class="column">
         <h5>Как записаться на экскурсию</h5>
         <p>
           Для подробной информации заполните форму.<br />Наши менеджеры с вами
           свяжутся.
         </p>
+      </section>
+      <section>
         <form>
           <input type="text" placeholder="Имя" /><br />
           <input type="text" placeholder="Фамилия" /><br />
@@ -277,7 +293,7 @@
           <input type="tel" placeholder="Номер телефона" /><br />
           <button type="submit">Отправить</button>
         </form>
-      </div>
+      </section>
 
       <select name="tariff" id="tariff">
         <label for="tariff">Выберите тариф:</label>
@@ -286,7 +302,51 @@
         <option value="premium">Премиум</option>
         <option value="luxury">Люкс</option>
       </select>
+      <aside>
+        <h2>Другие экскурсии</h2>
+        <ul>
+          <li>
+            <img
+              src="./src/2.png"
+              alt="Rivers and channels of Saint-Petersburg"
+            />
+            <p>Экскурсии по рекам и каналам</p>
+          </li>
+          <li>
+            <img src="./src/3.png" alt="Mystical rivers of Petersburg" />
+            <p>Мистический Петербург</p>
+          </li>
+          <li>
+            <img src="./src/4.png" alt="Walking on Petersburg" />
+            <p>Пешая прогулка по городу</p>
+          </li>
+          <li>
+            <img src="./src/6.png" alt="Bridges of Petersburg" />
+            <p>Семь мостов</p>
+          </li>
+          <li>
+            <img src="./src/7.png" alt="Literatures of Petersburg" />
+            <p>Литературный Петербург</p>
+          </li>
+          <li>
+            <img src="./src/8.png" alt="River Neva of Petersburg" />
+            <p>Акватория Невы</p>
+          </li>
+          <li>
+            <img
+              src="./src/9.png"
+              alt="Ship walking under the bridges of Petersburg"
+            />
+            <p>Прогулка под разводными мостами</p>
+          </li>
+        </ul>
+      </aside>
     </main>
-    <a href="https://t.me/edusondaily">Свяжитесь с автором экскурсии</a>
+    <address id="contacts">
+      <a href="https://t.me/edusondaily">Свяжитесь с автором экскурсии</a>
+    </address>
+    <footer>
+      <p>2023 год, Авторская экскурсия по Санкт-Петербургу</p>
+    </footer>
   </body>
 </html>
