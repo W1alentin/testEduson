@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <title>Экскурсия по Санкт-Петербургу</title>
     <meta charset="utf-8" />
@@ -16,13 +16,13 @@
         </ul>
       </nav>
     </header>
-    <header id="home">
+    <section id="home">
       <h1 align="center">Авторская экскурсия по Санкт-Петербургу</h1>
       <img
-        src="./src/1.png"
-        alt="View of Saint Petersburg"
-        width="895"
-        height="502"
+        src="./src/intro.png"
+        alt="Виды Санкт-Петербурга"
+        width="1920"
+        height="800"
       />
       <p>
         Откройте для себя великолепие Санкт-Петербурга с нашими увлекательными
@@ -30,15 +30,15 @@
         известные достопримечательности. Наши экскурсии созданы, чтобы показать
         вам самое лучшее, что Санкт-Петербург готов предложить.
       </p>
-    </header>
+    </section>
     <main>
       <section id="programm">
         <h2>Что мы предлагаем?</h2>
         <img
-          src="./src/10.png"
-          alt="Group of people in Saint Petersburg"
-          width="895"
-          height="502"
+          src="./src/program.jpg"
+          alt="Молодые люди позируют и улыбаются на фоне Эрмитажа"
+          width="440"
+          height="320"
         />
         <p>
           Приглашаем погрузиться в историю, культуру и великолепие
@@ -57,24 +57,16 @@
       <section id="audience">
         <h2>Кому подойдет экскурсия?</h2>
         <img
-          src="./src/18.png"
-          alt="Girl in Saint Petersburg"
-          width="895"
-          height="502"
+          src="./src/auditory-1.jpg"
+          alt="Девушка в Санкт-Петербурге"
+          width="246"
+          height="160"
         />
         <ol>
-          <ul>
-            Организованным группам от 15 человек.
-          </ul>
-          <ul>
-            Индивидуальным путешественикам.
-          </ul>
-          <ul>
-            Компаниям друзей.
-          </ul>
-          <ul>
-            Семьям с детьми старше 12 лет.
-          </ul>
+          <li>Организованным группам от 15 человек.</li>
+          <li>Индивидуальным путешественикам.</li>
+          <li>Компаниям друзей.</li>
+          <li>Семьям с детьми старше 12 лет.</li>
         </ol>
       </section>
       <section class="container-tarif" id="prices">
@@ -210,76 +202,58 @@
             </li>
           </ul>
         </form>
-        <p2 id="total-price">Сумма: 0 рублей</p2>
-        <script>
-          const checkboxes = document.querySelectorAll(
-            'input[name="services"]'
-          );
-          const totalPriceElement = document.getElementById("total-price");
-
-          checkboxes.forEach((checkbox) => {
-            checkbox.addEventListener("change", () => {
-              let totalPrice = 0;
-              checkboxes.forEach((checkbox) => {
-                if (checkbox.checked) {
-                  totalPrice += parseInt(checkbox.getAttribute("data-price"));
-                }
-              });
-              totalPriceElement.textContent = `Сумма: ${totalPrice} рублей`;
-            });
-          });
-        </script>
+        <p id="total-price">Сумма: 0 рублей</p>
       </section>
       <section>
         <h2>Отзывы участников</h2>
         <figure>
           <img
-            src="./src/5.png"
-            alt="People who visited Saint Petersburg and they are happy about it"
-            width="526"
-            height="295"
+            src="./src/reviews-1.jpg"
+            alt="Молодая пара, которые посетили Санкт-Петербург, и они довольны этим"
+            width="150"
+            height="150"
           />
           <figcaption>Аня и Сережа, Пермь</figcaption>
+          <blockquote>
+            Спасибо за незабываемую экскурсию! Увозим с собой нереальные
+            фотографии! Организаторам огромное спасибо, что даже в дождь
+            путешествие было комфортным.
+          </blockquote>
         </figure>
-        <blockquote>
-          Спасибо за незабываемую экскурсию! Увозим с собой нереальные
-          фотографии! Организаторам огромное спасибо, что даже в дождь
-          путешествие было комфортным.
-        </blockquote>
 
         <figure>
           <img
-            src="./src/17.png"
-            alt="Friends were glad to visit Saint Petersburg"
-            width="295"
-            height="526"
+            src="./src/reviews-2.jpg"
+            alt="Друзья были рады посетить Санкт-Петербург"
+            width="150"
+            height="150"
           />
           <figcaption>Света, Алена, Саша и Ваня, Краснодар</figcaption>
+          <blockquote>
+            Мы провели замечательный день с вашей экскурсией по крышам
+            Санкт-Петербурга! Это было настоящее приключение. Рекомендуем!
+          </blockquote>
         </figure>
-        <blockquote>
-          Мы провели замечательный день с вашей экскурсией по крышам
-          Санкт-Петербурга! Это было настоящее приключение. Рекомендуем!
-        </blockquote>
 
         <figure>
           <img
-            src="./src/21.png"
-            alt="Girl vicited Saint Petersburg and loved it"
-            width="526"
-            height="295"
+            src="./src/reviews-3.jpg"
+            alt="Девушка посетила Санкт-Петербург и полюбила его"
+            width="150"
+            height="150"
           />
           <figcaption>Кристина, Архангельск</figcaption>
+          <blockquote>
+            Мы просто влюбились в Санкт-Петербург благодаря этой экскурсии!
+            Суперский гид рассказал нам удивительные истории о городе и его
+            жителях. Отдельно отмечу маршрут. Не первый раз в Питере, но эти
+            локации увидела впервые. Класс!
+          </blockquote>
         </figure>
-        <blockquote>
-          Мы просто влюбились в Санкт-Петербург благодаря этой экскурсии!
-          Суперский гид рассказал нам удивительные истории о городе и его
-          жителях. Отдельно отмечу маршрут. Не первый раз в Питере, но эти
-          локации увидела впервые. Класс!
-        </blockquote>
       </section>
 
       <section class="column">
-        <h5>Как записаться на экскурсию</h5>
+        <h2>Как записаться на экскурсию</h2>
         <p>
           Для подробной информации заполните форму.<br />Наши менеджеры с вами
           свяжутся.
@@ -287,6 +261,14 @@
       </section>
       <section>
         <form>
+          <select name="tariff" id="tariff">
+            <label for="tariff">Выберите тариф:</label>
+            <option value="economy">Эконом</option>
+            <option value="comfort">Комфорт</option>
+            <option value="premium">Премиум</option>
+            <option value="luxury">Люкс</option>
+          </select>
+          <br />
           <input type="text" placeholder="Имя" /><br />
           <input type="text" placeholder="Фамилия" /><br />
           <input type="email" placeholder="E-mail" /><br />
@@ -294,59 +276,96 @@
           <button type="submit">Отправить</button>
         </form>
       </section>
-
-      <select name="tariff" id="tariff">
-        <label for="tariff">Выберите тариф:</label>
-        <option value="economy">Эконом</option>
-        <option value="comfort">Комфорт</option>
-        <option value="premium">Премиум</option>
-        <option value="luxury">Люкс</option>
-      </select>
       <aside>
         <h2>Другие экскурсии</h2>
         <ul>
           <li>
             <img
-              src="./src/2.png"
-              alt="Rivers and channels of Saint-Petersburg"
+              src="./src/card-1.jpg"
+              width="240"
+              height="160"
+              alt="Реки и каналы Санкт-Петербурга"
             />
             <p>Экскурсии по рекам и каналам</p>
           </li>
           <li>
-            <img src="./src/3.png" alt="Mystical rivers of Petersburg" />
+            <img
+              src="./src/card-2.jpg"
+              width="240"
+              height="160"
+              alt="Девушки сидят за столиком кафе на набережной Петербурга"
+            />
             <p>Мистический Петербург</p>
           </li>
           <li>
-            <img src="./src/4.png" alt="Walking on Petersburg" />
+            <img
+              src="./src/card-3.jpg"
+              width="240"
+              height="160"
+              alt="Вид на Неву и собор Санкт-Петербурга"
+            />
             <p>Пешая прогулка по городу</p>
           </li>
           <li>
-            <img src="./src/6.png" alt="Bridges of Petersburg" />
+            <img
+              src="./src/card-4.jpg"
+              width="240"
+              height="160"
+              alt="Люди гуляют рядом с достопримечательностями Санкт-Петербурга"
+            />
             <p>Семь мостов</p>
           </li>
           <li>
-            <img src="./src/7.png" alt="Literatures of Petersburg" />
+            <img
+              src="./src/card-5.jpg"
+              width="240"
+              height="160"
+              alt="Осенний вид Санкт-Петербурга"
+            />
             <p>Литературный Петербург</p>
           </li>
           <li>
-            <img src="./src/8.png" alt="River Neva of Petersburg" />
+            <img
+              src="./src/card-6.jpg"
+              width="240"
+              height="160"
+              alt="Вид на достопримечательности Санкт-Петербурга"
+            />
             <p>Акватория Невы</p>
           </li>
           <li>
             <img
-              src="./src/9.png"
-              alt="Ship walking under the bridges of Petersburg"
+              src="./src/card-7.jpg"
+              width="240"
+              height="160"
+              alt="Вид на Неву и туристический кораблик"
             />
             <p>Прогулка под разводными мостами</p>
           </li>
         </ul>
       </aside>
+      <address id="contacts">
+        <a href="https://t.me/edusondaily">Свяжитесь с автором экскурсии</a>
+      </address>
     </main>
-    <address id="contacts">
-      <a href="https://t.me/edusondaily">Свяжитесь с автором экскурсии</a>
-    </address>
     <footer>
       <p>2023 год, Авторская экскурсия по Санкт-Петербургу</p>
     </footer>
+    <script>
+      const checkboxes = document.querySelectorAll('input[name="services"]');
+      const totalPriceElement = document.getElementById("total-price");
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", () => {
+          let totalPrice = 0;
+          checkboxes.forEach((checkbox) => {
+            if (checkbox.checked) {
+              totalPrice += parseInt(checkbox.getAttribute("data-price"));
+            }
+          });
+          totalPriceElement.textContent = `Сумма: ${totalPrice} рублей`;
+        });
+      });
+    </script>
   </body>
 </html>
