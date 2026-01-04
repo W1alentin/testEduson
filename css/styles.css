@@ -42,3 +42,71 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+@font-face {
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../src/fonts/OpenSans-Regular.woff2) format(woff2);
+}
+@font-face {
+  font-family: "OpenSans", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  src: url(../src/fonts/OpenSans-Bold.woff2) format(woff2);
+}
+
+.page-body {
+  font-family: "OpenSans", sans-serif;
+  font-size: 1.25rem;
+}
+
+.intro-title {
+  font-weight: bold;
+  font-size: 3.125rem;
+}
+
+.program-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.program-subtitle {
+  font-size: 1.5rem;
+}
+
+.auditory-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.price-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.prices-table th {
+  font-weight: 700;
+  text-align: left;
+}
+
+.prices-table td {
+  font-size: 1rem;
+}
+
+.prices-caption {
+  font-size: 0.875rem;
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.service-list label {
+  font-size: 1rem;
+}
+
+.service-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
