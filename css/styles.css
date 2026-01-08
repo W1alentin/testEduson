@@ -79,6 +79,24 @@ h6 {
   padding: 20px 0;
 }
 
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  opacity: 0.5;
+}
+
 .intro .container {
   padding-right: 550px;
 }
@@ -90,6 +108,7 @@ h6 {
   background-image: url("../src/intro.png");
   background-size: cover;
   background-position: center;
+  background-color: #242424;
   color: #fff;
   box-sizing: border-box;
 }
@@ -114,8 +133,13 @@ h6 {
   grid-template-columns: 1fr 260px;
 }
 
+.page-main-column {
+  background-color: #ffffff;
+}
+
 .page-section {
   position: relative;
+  padding: 40px 80px 40px 0;
 }
 
 .page-section-with-bg::before {
@@ -125,6 +149,7 @@ h6 {
   right: 0;
   bottom: 0;
   width: 99999px;
+  background-color: #f2f2f2;
 }
 
 .program-title {
@@ -231,8 +256,13 @@ h6 {
 .prices-table th {
   padding: 20px;
   font-weight: 700;
+  background-color: #242424;
   color: #fff;
   text-align: left;
+}
+
+.prices-table tr:nth-child(odd) td {
+  background-color: #f2f2f2;
 }
 
 .prices-table td {
@@ -295,10 +325,15 @@ h6 {
   margin-top: auto;
   padding: 20px;
   border-radius: 15px;
+  background-color: #242424;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
   white-space: nowrap;
+}
+
+.page-section.reviews {
+  margin-bottom: 20px;
 }
 
 .reviews-title {
@@ -313,6 +348,7 @@ h6 {
   gap: 40px;
   padding: 20px 80px 20px 40px;
   border-radius: 20px;
+  background-color: #f8f8f8;
 }
 
 .reviews-item:not(:last-child) {
@@ -357,6 +393,7 @@ h6 {
 .contacts-content {
   padding: 20px 280px 20px 40px;
   border-radius: 20px;
+  background-color: #f8f8f8;
 }
 
 .contacts-text-wrapper {
@@ -387,6 +424,7 @@ h6 {
   position: relative;
   display: flex;
   justify-content: space-between;
+  background-color: #242424;
   color: #fff;
   padding: 20px 40px;
   padding-right: 80px;
@@ -419,7 +457,8 @@ h6 {
 
 .sidebar {
   padding: 40px 0 40px 20px;
-  color: #fff;
+  background-color: #242424;
+  color: #ffffff;
 }
 
 .sidebar-title {
@@ -473,7 +512,8 @@ h6 {
 
 .page-footer {
   padding: 30px 0;
-  color: #000000;
+  background-color: #242424;
+  color: #ffffff;
 }
 
 .page-footer .container {
