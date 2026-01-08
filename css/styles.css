@@ -58,13 +58,35 @@ h6 {
     url(../src/fonts/OpenSans-Bold.woff) format(woff);
 }
 
+.page {
+  height: 100%;
+}
+
 .page-body {
+  min-height: 100%;
   font-family: "OpenSans", sans-serif;
   font-size: 20px;
   color: #000;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.page-header {
+  padding: 20px 0;
+}
+
+.intro .container {
+  padding-right: 550px;
+}
+
 .intro {
+  min-height: 610px;
+  padding-top: 160px;
+  padding-bottom: 120px;
   background-image: url("../src/intro.png");
   background-size: cover;
   background-position: center;
@@ -73,13 +95,23 @@ h6 {
 }
 
 .intro-title {
+  margin-bottom: 30px;
   font-size: 50px;
   font-weight: bold;
   text-shadow: 2px 2px 4px #000000;
 }
 
+.intro-text-wrapper p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .page-content {
   background-image: linear-gradient(90deg, #fff 50%, #242424 50%);
+}
+
+.page-content .container {
+  display: grid;
+  grid-template-columns: 1fr 260px;
 }
 
 .page-section {
@@ -92,24 +124,47 @@ h6 {
   top: 0;
   right: 0;
   bottom: 0;
+  width: 99999px;
 }
 
 .program-title {
+  margin-bottom: 30px;
   font-size: 40px;
   font-weight: 700;
 }
 
+.program-text-wrapper p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.program-row {
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
 .program-image-wrapper {
+  width: 100%;
+  height: 320px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
 .program-image {
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
 
 .program-subtitle {
+  margin-bottom: 20px;
   font-size: 24px;
+}
+
+.program-list li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .auditory {
@@ -122,35 +177,81 @@ h6 {
 }
 
 .auditory-title {
+  margin-bottom: 30px;
   font-size: 40px;
   font-weight: 700;
 }
 
+.auditory-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .auditory-image-wrapper {
+  height: 160px;
+  border-radius: 20px;
   overflow: hidden;
 }
 
 .auditory-image {
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
 
+.auditory-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 20px;
+}
+
+.auditory-bottom {
+  margin-top: 30px;
+}
+
 .prices-title {
+  margin-bottom: 30px;
   font-size: 40px;
   font-weight: 700;
 }
 
+.prices-text-wrapper p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.prices-table {
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
 .prices-table th {
+  padding: 20px;
   font-weight: 700;
   color: #fff;
   text-align: left;
 }
 
 .prices-table td {
+  padding: 20px;
   font-size: 16px;
 }
 
+.prices-table th:first-child,
+.prices-table td:first-child {
+  border-radius: 15px 0 0 15px;
+}
+
+.prices-table th:last-child,
+.prices-table td:last-child {
+  border-radius: 0 15px 15px 0;
+}
+
 .prices-caption {
+  margin-top: 10px;
   font-size: 14px;
   color: #9d9d9d;
 }
@@ -161,8 +262,20 @@ h6 {
 }
 
 .services-title {
+  margin-bottom: 30px;
   font-size: 40px;
   font-weight: 700;
+}
+
+.services-row {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.services-text p {
+  margin-bottom: 10px;
 }
 
 .services-list {
@@ -179,6 +292,9 @@ h6 {
 }
 
 .services-price {
+  margin-top: auto;
+  padding: 20px;
+  border-radius: 15px;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
@@ -186,11 +302,27 @@ h6 {
 }
 
 .reviews-title {
+  margin-bottom: 40px;
   font-size: 40px;
   font-weight: 700;
 }
 
+.reviews-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 40px;
+  padding: 20px 80px 20px 40px;
+  border-radius: 20px;
+}
+
+.reviews-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .reviews-item-image-wrapper {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -199,6 +331,8 @@ h6 {
 }
 
 .reviews-item-image {
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -207,15 +341,34 @@ h6 {
   font-size: 16px;
 }
 
+.reviews-item-text-wrapper p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .reviews-item-author {
+  margin-top: 20px;
   font-size: 16px;
+}
+
+.page-section.contacts {
+  padding-bottom: 80px;
+}
+
+.contacts-content {
+  padding: 20px 280px 20px 40px;
+  border-radius: 20px;
 }
 
 .contacts-text-wrapper {
   font-size: 16px;
 }
 
+.contacts-text-wrapper p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .contacts-form-bottom {
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -226,6 +379,7 @@ h6 {
 }
 
 .contacts-address {
+  margin-top: 40px;
   font: inherit;
 }
 
@@ -234,6 +388,9 @@ h6 {
   display: flex;
   justify-content: space-between;
   color: #fff;
+  padding: 20px 40px;
+  padding-right: 80px;
+  border-radius: 15px;
   font-size: 40px;
   font-weight: 700;
   text-decoration: none;
@@ -244,6 +401,8 @@ h6 {
   position: absolute;
   top: 30px;
   right: 40px;
+  width: 40px;
+  height: 40px;
   background-image: url(../src/telegram.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -259,19 +418,29 @@ h6 {
 }
 
 .sidebar {
+  padding: 40px 0 40px 20px;
   color: #fff;
 }
 
 .sidebar-title {
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
 }
 
 .sidebar-list {
+  padding: 0;
   list-style-type: none;
 }
 
+.sidebar li:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .card-image-link {
+  width: 100%;
+  height: 160px;
+  border-radius: 20px;
   display: block;
   overflow: hidden;
 }
@@ -281,11 +450,14 @@ h6 {
 }
 
 .card-image {
+  width: 100%;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
 
 .card-image-title {
+  margin-top: 10px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -300,7 +472,12 @@ h6 {
 }
 
 .page-footer {
+  padding: 30px 0;
   color: #000000;
+}
+
+.page-footer .container {
+  padding-right: 390px;
 }
 
 .copyright {
