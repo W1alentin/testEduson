@@ -302,11 +302,16 @@ h6 {
 }
 
 .reviews-title {
+  margin-bottom: 40px;
   font-size: 40px;
   font-weight: 700;
 }
 
 .reviews-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 40px;
+  padding: 20px 80px 20px 40px;
   border-radius: 20px;
 }
 
@@ -350,6 +355,7 @@ h6 {
 }
 
 .contacts-content {
+  padding: 20px 280px 20px 40px;
   border-radius: 20px;
 }
 
@@ -425,6 +431,10 @@ h6 {
 .sidebar-list {
   padding: 0;
   list-style-type: none;
+}
+
+.sidebar li:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .card-image-link {
